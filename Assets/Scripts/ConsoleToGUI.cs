@@ -8,7 +8,7 @@ public class ConsoleToGUI : MonoBehaviour //Thanks to https://answers.unity.com/
     int kChars = 700;
     void OnEnable() { Application.logMessageReceived += Log; }
     void OnDisable() { Application.logMessageReceived -= Log; }
-    void Update() { if (Input.GetKeyDown(KeyCode.Space)) { doShow = !doShow; } }
+    void Update() { if (Input.GetKeyDown(KeyCode.C)) { doShow = !doShow; } }
     public void Log(string logString, string stackTrace, LogType type)
     {
         // for onscreen...
